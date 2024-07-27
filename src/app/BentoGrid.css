@@ -1,0 +1,347 @@
+
+
+/* Contenedor principal centrado */
+.bento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Opcional: agrega algo de espacio alrededor de la cuadrícula */
+}
+
+/* Cuadrícula de Bento */
+.bento-grid {
+  display: grid;
+  gap: 10px;
+}
+
+/* Estilo del contenedor de la imagen */
+.bento-item {
+  width: 100%;
+  overflow: hidden; /* Oculta la parte que sobresale del contenedor */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  box-shadow: 0px 0px 28px -13px rgba(0,0,0,0.5); /* Opcional: sombra */
+  background-color: #f0f0f0; /* Opcional: color de fondo */
+  position: relative; /* Necesario para el posicionamiento de la imagen */
+}
+
+/* Estilo de la imagen para todos los elementos .bento-item */
+.bento-item img {
+  width: 100%;
+  position: absolute;
+  top: 0; /* Inicialmente muestra la parte superior de la imagen */
+  left: 0;
+  transition: top 2s ease; /* Transición suave para revelar la imagen */
+}
+
+/* Estilo para mostrar más de la imagen al pasar el ratón para item1 */
+.item1:hover img {
+  top: -900px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+/* Estilo para mostrar más de la imagen al pasar el ratón para item2 y item3 */
+.item2:hover img, .item3:hover img {
+  top: -452px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff0000; /* Opcional: color de fondo para diferenciar los elementos */
+  }
+
+  /* Otros estilos para pantallas grandes */
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 480px) and (max-width: 767px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #ff9999; /* Opcional: color de fondo para diferenciar los elementos */
+  }
+
+  /* Otros estilos para pantallas medianas */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 479px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .item1, .item2, .item3, .item4, .item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .item1 {
+    background-color: #ff9999; /* Opcional: color de fondo para diferenciar los elementos */
+  }
+
+  /* Otros estilos para pantallas pequeñas */
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes swing {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.animated-heading {
+  font-size: 50px;
+  display: inline-block;
+  animation: swing 4s ease-in-out infinite;
+}
+
+.span-texto {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #3b82f6;
+}
+
+
+.bento-grid {
+  display: grid;
+  gap: 10px;
+  width: 700px;
+
+}
+
+.bento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento-item {
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff9999;
+  }
+
+  .item2 {
+    background-color: #99ccff;
+  }
+
+  .item3 {
+    background-color: #ffcc99;
+  }
+
+  .item4 {
+    background-color: #ccff99;
+  }
+
+  .item5 {
+    background-color: #ffccff;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 480px) and (max-width: 767px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #ff9999;
+  }
+
+  .item2 {
+    background-color: #99ccff;
+  }
+
+  .item3 {
+    background-color: #ffcc99;
+  }
+
+  .item4 {
+    background-color: #ccff99;
+  }
+
+  .item5 {
+    background-color: #ffccff;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 479px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .item1 {
+    background-color: #ff9999;
+  }
+
+  .item2 {
+    background-color: #99ccff;
+  }
+
+  .item3 {
+    background-color: #ffcc99;
+  }
+
+  .item4 {
+    background-color: #ccff99;
+  }
+
+  .item5 {
+    background-color: #ffccff;
+  }
+}
+
+.bento-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.bento-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff9999;
+  }
+
+  .item2 {
+    background-color: #99ccff;
+  }
+
+  .item3 {
+    background-color: #ffcc99;
+  }
+
+  .item4 {
+    background-color: #ccff99;
+  }
+
+  .item5 {
+    background-color: #ffccff;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 480px) and (max-width: 767px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: #ff9999;
+  }
+
+  .item2 {
+    background-color: #99ccff;
+  }
+
+  .item3 {
+    background-color: #ffcc99;
+  }
+
+  .item4 {
+    background-color: #ccff99;
+  }
+
+  .item5 {
+    background-color: #ffccff;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 479px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+}
