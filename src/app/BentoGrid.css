@@ -43,21 +43,6 @@
   top: -452px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
 }
 
-/* Estilos para pantallas grandes */
-@media (min-width: 768px) {
-  .bento-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
-  }
-
-  .item1 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #ff0000; /* Opcional: color de fondo para diferenciar los elementos */
-  }
-
-  /* Otros estilos para pantallas grandes */
-}
 
 
 
@@ -125,6 +110,23 @@
 @media (min-width: 768px) {
   .bento-grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+  }
+
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #ff0000; /* Opcional: color de fondo para diferenciar los elementos */
+  }
+
+  /* Otros estilos para pantallas grandes */
+}
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 200px);
   }
 
@@ -160,7 +162,7 @@
 
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 150px);
   }
 
   .item1 {
