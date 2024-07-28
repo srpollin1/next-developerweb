@@ -191,12 +191,16 @@
 
 /* Estilo para mostrar más de la imagen al pasar el ratón para item1 */
 .item1:hover img {
-   top: -752px;/* Ajusta este valor según sea necesario para revelar más de la imagen */
+   top: -700px;/* Ajusta este valor según sea necesario para revelar más de la imagen */
 }
 
 /* Estilo para mostrar más de la imagen al pasar el ratón para item2 y item3 */
-.item2:hover img, .item3:hover img {
+.item2:hover img {
   top: -550px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+.item3:hover img {
+  top: -500px;
 }
 
 
@@ -236,6 +240,23 @@
   .item5 {
     background-color: #ffccff;
   }
+}
+
+@media (max-width: 300px){
+  /* Estilo para mostrar más de la imagen al pasar el ratón para item1 */
+.item1:hover img {
+  top: -300px;/* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+/* Estilo para mostrar más de la imagen al pasar el ratón para item2 y item3 */
+.item2:hover img {
+ top: -250px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+.item3:hover img {
+ top: -220px;
+}
+
 }
 
 .bento-grid {
