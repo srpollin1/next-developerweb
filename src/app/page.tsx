@@ -39,10 +39,17 @@ export default function Home() {
                         <div className="bento-item item3">NextJS</div>
                         <div className="bento-item item4">Automatización</div> */}
                     </div>
+
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <h1 className="text-4xl font-black">Wordpress Autoadministrable</h1>
+                    {/* <br />
+                <h1>
+                    <del className="text-4xl "> 110$</del><br />
+                    <span className="text-6xl" style={{ color: '#3b82f6' }}>65$</span> <br />
+                </h1> */}
                 </div>
 
-
-                <p className="text-4xl">Wordpress Autoadministrable - NextJS</p>
                 <br />
             </div>
             <div className="flex items-center justify-center">
@@ -63,7 +70,7 @@ export default function Home() {
             </div>
             <br />
             <div className="-mx-3 flex items-center justify-center">
-                
+
                 <div className="px-3 md:w-1/3">
                     <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                         <div className="w-full flex mb-4 items-center">
@@ -72,7 +79,7 @@ export default function Home() {
                             </div>
                             <div className="flex-grow pl-3">
                                 <h6 className="font-bold text-sm uppercase text-gray-600">
-                                PSICOLOGO CRISTIAN 
+                                    PSICOLOGO CRISTIAN
                                 </h6>
                             </div>
                         </div>
@@ -180,7 +187,7 @@ export default function Home() {
             </div> */}
 
             <div style={{ textAlign: 'center' }}>
-                <h1 className="text-4xl font-black">Wordpress Autoadministrable - NextJS</h1>
+                <h1 className="text-4xl font-black">Wordpress Autoadministrable</h1>
                 {/* <br />
                 <h1>
                     <del className="text-4xl "> 110$</del><br />

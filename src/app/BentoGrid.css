@@ -16,7 +16,7 @@
 
 /* Estilo del contenedor de la imagen */
 .bento-item {
-  width: 100%;
+  width: 97%;
   overflow: hidden; /* Oculta la parte que sobresale del contenedor */
   border-radius: 10px; /* Opcional: bordes redondeados */
   box-shadow: 0px 0px 28px -13px rgba(0,0,0,0.5); /* Opcional: sombra */
