@@ -18,7 +18,7 @@ export default function Home() {
                     <br />
                     <button className="button button--rounded">Contáctame</button>
                     <br /><br />
-                    <h1 className="text-2xl  line-clamp-3">
+                    <h1 className="text-2xl">
                         Te ayudo a digitalizar y automatizar tu negocio <br />
                         mediante soluciones innovadoras. <br />
                     </h1>
@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
 
 
-                <p className="text-4xl line-clamp-6">Wordpress Autoadministrable - NextJS</p>
+                <p className="text-4xl">Wordpress Autoadministrable - NextJS</p>
                 <br />
             </div>
             <div className="flex items-center justify-center">
@@ -180,7 +180,7 @@ export default function Home() {
             </div> */}
 
             <div style={{ textAlign: 'center' }}>
-                <h1 className="text-4xl line-clamp-3 font-black">Wordpress Autoadministrable - NextJS</h1>
+                <h1 className="text-4xl font-black">Wordpress Autoadministrable - NextJS</h1>
                 {/* <br />
                 <h1>
                     <del className="text-4xl "> 110$</del><br />
