@@ -27,13 +27,13 @@ export default function Home() {
                 <div className="bento-container">
                     <div className="bento-grid">
                         <div className="bento-item item1">
-                            <img style={{ width: '465px' }} src="./Psicologo-Cristian-Retamales.png" alt="" />
+                            <img style={{ width: '100%' }} src="./Psicologo-Cristian-Retamales.png" alt="" />
                         </div>
                         <div className="bento-item item2">
-                            <img style={{ width: '235px' }} src="./ELECPA-ENERGÍA-SPA.png" alt="" />
+                            <img style={{ width: '100%' }} src="./ELECPA-ENERGÍA-SPA.png" alt="" />
                         </div>
                         <div className="bento-item item3">
-                            <img style={{ width: '235px' }} src="./DR-Consultoría-de-marketing-digital.png" alt="" />
+                            <img style={{ width: '100%' }} src="./DR-Consultoría-de-marketing-digital.png" alt="" />
                         </div>
                         {/* <div className="bento-item item2">Wordpress</div>
                         <div className="bento-item item3">NextJS</div>
