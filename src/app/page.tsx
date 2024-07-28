@@ -63,6 +63,7 @@ export default function Home() {
             </div>
             <br />
             <div className="-mx-3 flex items-center justify-center">
+                
                 <div className="px-3 md:w-1/3">
                     <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                         <div className="w-full flex mb-4 items-center">
@@ -71,7 +72,7 @@ export default function Home() {
                             </div>
                             <div className="flex-grow pl-3">
                                 <h6 className="font-bold text-sm uppercase text-gray-600">
-                                    Psicologo Cristian Retamales
+                                PSICOLOGO CRISTIAN 
                                 </h6>
                             </div>
                         </div>
@@ -80,10 +81,8 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt
-                                ratione dolor exercitationem minima quas itaque saepe quasi architecto
-                                vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta
-                                deleniti.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                                obcaecati ullam excepturi dicta error deleniti sequi.
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>
@@ -97,7 +96,7 @@ export default function Home() {
                             </div>
                             <div className="flex-grow pl-3">
                                 <h6 className="font-bold text-sm uppercase text-gray-600">
-                                    Elecpa Energía
+                                    ELECPA ENERGÍA
                                 </h6>
                             </div>
                         </div>
@@ -106,9 +105,10 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod
-                                necessitatibus, labore sapiente, est, dignissimos ullam error ipsam
-                                sint quam tempora vel.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                                inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus
+                                dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi
+                                voluptatem! Culpa, iusto.
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>

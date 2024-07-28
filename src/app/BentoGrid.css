@@ -59,41 +59,6 @@
   /* Otros estilos para pantallas grandes */
 }
 
-/* Estilos para pantallas medianas */
-@media (min-width: 480px) and (max-width: 767px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
-  }
-
-  .item1 {
-    grid-column: span 2;
-    grid-row: span 1;
-    background-color: #ff9999; /* Opcional: color de fondo para diferenciar los elementos */
-  }
-
-  /* Otros estilos para pantallas medianas */
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 479px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 200px);
-  }
-
-  .item1, .item2, .item3, .item4, .item5 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .item1 {
-    background-color: #ff9999; /* Opcional: color de fondo para diferenciar los elementos */
-  }
-
-  /* Otros estilos para pantallas pequeñas */
-}
-
 
 
 
@@ -188,6 +153,11 @@
 
 /* Estilos para pantallas medianas */
 @media (min-width: 480px) and (max-width: 767px) {
+
+  .bento-container{
+    padding: 92px;
+  }
+
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -218,21 +188,27 @@
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 479px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 200px);
+
+
+
+  .-mx-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
 
-  .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5 {
-    grid-column: span 1;
-    grid-row: span 1;
+   .animated-heading{
+    font-size: 30px;
+   }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
   }
 
   .item1 {
+    grid-column: span 2;
+    grid-row: span 1;
     background-color: #ff9999;
   }
 
@@ -266,82 +242,4 @@
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 768px) {
-  .bento-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
-  }
-
-  .item1 {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #ff9999;
-  }
-
-  .item2 {
-    background-color: #99ccff;
-  }
-
-  .item3 {
-    background-color: #ffcc99;
-  }
-
-  .item4 {
-    background-color: #ccff99;
-  }
-
-  .item5 {
-    background-color: #ffccff;
-  }
-}
-
-/* Estilos para pantallas medianas */
-@media (min-width: 480px) and (max-width: 767px) {
-  .bento-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
-  }
-
-  .item1 {
-    grid-column: span 2;
-    grid-row: span 1;
-    background-color: #ff9999;
-  }
-
-  .item2 {
-    background-color: #99ccff;
-  }
-
-  .item3 {
-    background-color: #ffcc99;
-  }
-
-  .item4 {
-    background-color: #ccff99;
-  }
-
-  .item5 {
-    background-color: #ffccff;
-  }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 479px) {
-  .bento-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 200px);
-  }
-
-  .item1,
-  .item2,
-  .item3,
-  .item4,
-  .item5 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
 }
