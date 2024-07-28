@@ -189,6 +189,15 @@
 /* Estilos para pantallas pequeñas */
 @media (max-width: 479px) {
 
+/* Estilo para mostrar más de la imagen al pasar el ratón para item1 */
+.item1:hover img {
+   top: -752px;/* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
+
+/* Estilo para mostrar más de la imagen al pasar el ratón para item2 y item3 */
+.item2:hover img, .item3:hover img {
+  top: -550px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+}
 
 
   .-mx-3{
