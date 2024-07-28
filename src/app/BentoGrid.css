@@ -35,7 +35,7 @@
 
 /* Estilo para mostrar más de la imagen al pasar el ratón para item1 */
 .item1:hover img {
-  top: -900px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
+  top: -850px; /* Ajusta este valor según sea necesario para revelar más de la imagen */
 }
 
 /* Estilo para mostrar más de la imagen al pasar el ratón para item2 y item3 */
