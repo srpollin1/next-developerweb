@@ -92,6 +92,11 @@
 
 /* Estilos para pantallas medianas */
 @media (min-width: 576px) and (max-width: 767px) {
+  .-mx-3{
+    display: grid;
+  }
+
+
   .bento-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px);
@@ -106,6 +111,11 @@
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 575px) {
+
+  .-mx-3{
+    display: grid;
+  }
+
 
   .animated-heading {
     font-size: 30px;
@@ -129,3 +139,5 @@
     background-color: #f0f0f0;
   }
 }
+
+
