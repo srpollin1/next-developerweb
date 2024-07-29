@@ -4,11 +4,20 @@ import React from "react";
 import './BentoGrid.css';
 import './Buttons.css'
 import { FaCheckCircle } from "react-icons/fa";
+import swal from 'sweetalert';
 
 export default function Home() {
+    const handleContactClick = () => {
+        swal({
+            title: "Contáctame",
+            text: "Gracias por tu interés. Pronto nos pondremos en contacto contigo.",
+            icon: "success",
+
+        });
+    };
     return (
         <>
-            <div style={{ textAlign: 'center' }}>
+            <div className="text-center">
                 <br />
                 <h1 className="animated-heading font-black">Diseño y Desarrrollo de<br />
                     <span className="span-texto">Páginas web</span> <br />
@@ -16,7 +25,7 @@ export default function Home() {
                 </h1>
                 <div>
                     <br />
-                    <button className="button button--rounded">Contáctame</button>
+                    <button className="button button--rounded" onClick={handleContactClick}>Contáctame</button>
                     <br /><br />
                     <h1 className="text-2xl">
                         Te ayudo a digitalizar y automatizar tu negocio <br />
@@ -27,13 +36,13 @@ export default function Home() {
                 <div className="bento-container">
                     <div className="bento-grid">
                         <div className="bento-item item1">
-                            <img style={{ width: '100%' }} src="./Psicologo-Cristian-Retamales.png" alt="" />
+                            <img src="./Psicologo-Cristian-Retamales.png" alt="" />
                         </div>
                         <div className="bento-item item2">
-                            <img style={{ width: '100%' }} src="./ELECPA-ENERGÍA-SPA.png" alt="" />
+                            <img src="./ELECPA-ENERGÍA-SPA.png" alt="" />
                         </div>
                         <div className="bento-item item3">
-                            <img style={{ width: '100%' }} src="./DR-Consultoría-de-marketing-digital.png" alt="" />
+                            <img src="./DR-Consultoría-de-marketing-digital.png" alt="" />
                         </div>
                         {/* <div className="bento-item item2">Wordpress</div>
                         <div className="bento-item item3">NextJS</div>
@@ -41,7 +50,7 @@ export default function Home() {
                     </div>
 
                 </div>
-                <div style={{ textAlign: 'center' }}>
+                <div className="text-center">
                     <h1 className="text-4xl font-black">Wordpress Autoadministrable</h1>
                     {/* <br />
                 <h1>
@@ -63,7 +72,7 @@ export default function Home() {
                 ></iframe>
             </div>
             <br />
-            <div style={{ textAlign: 'center' }}>
+            <div className="text-center">
                 <h1 className="text-4xl font-black">Nuestros clientes son la mejor <br />
                     <span style={{ color: '#3b82f6' }}>prueba de nuestro éxito.</span>
                 </h1>
@@ -186,7 +195,7 @@ export default function Home() {
                 </div>
             </div> */}
 
-            <div style={{ textAlign: 'center' }}>
+            <div className="text-center">
                 <h1 className="text-4xl font-black">Wordpress Autoadministrable</h1>
                 {/* <br />
                 <h1>
@@ -224,8 +233,8 @@ export default function Home() {
             </div>
             <br />
 
-            <div style={{ textAlign: 'center' }}>
-                <button className="button button--rounded">Cotiza Aquí</button>
+            <div className="text-center">
+                <button className="button button--rounded" onClick={handleContactClick}>Cotiza Aquí</button>
             </div>
             <br />
         </>

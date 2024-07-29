@@ -1,5 +1,5 @@
 {
-  "name": "next-psicologo-cristian",
+  "name": "next-programandoconedu",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "clsx": "^2.1.1",
     "cobe": "^0.6.3",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.3.12",
     "next": "14.2.4",
     "react": "^18",
@@ -20,6 +21,9 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
     "react-spring": "^9.7.4",
+    "resend": "^3.5.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.12.3",
     "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
