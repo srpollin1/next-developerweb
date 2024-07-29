@@ -7,13 +7,6 @@ import { FaCheckCircle } from "react-icons/fa";
 import swal from 'sweetalert';
 
 export default function Home() {
-    const handleContactClick = () => {
-        swal({
-            title: "Contáctame",
-            text: "Gracias por tu interés. Pronto nos pondremos en contacto contigo.",
-            icon: "success",
-        });
-    };
     return (
         <>
             <div className="text-center">
@@ -232,8 +225,8 @@ export default function Home() {
             </div>
             <br />
 
-            <div className="text-center">
-                <button className="button button--rounded"  onClick={handleContactClick}>Cotiza Aquí</button>
+            <div style={{ textAlign: 'center' }}>
+                <button className="button button--rounded">Cotiza Aquí</button>
             </div>
             <br />
         </>
