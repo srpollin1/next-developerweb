@@ -10,8 +10,43 @@ export default function Home() {
     const handleContactClick = () => {
         swal({
             title: "Contáctame",
-            text: "Gracias por tu interés. Pronto nos pondremos en contacto contigo.",
-            icon: "success",
+            text: "Por favor, completa el formulario para ponernos en contacto contigo.",
+            content: {
+                element: "div",
+                attributes: {
+                    innerHTML: `
+                        <form name="contact" method="post" data-netlify="true">
+                            <p>
+                                <label>Nombre
+                                    <input type="text" name="name" required />
+                                </label>
+                            </p>
+                            <p>
+                                <label>Email
+                                    <input type="email" name="email" required />
+                                </label>
+                            </p>
+                            <p>
+                                <button type="submit">Enviar</button>
+                            </p>
+                        </form>
+                        <script>
+                            document.querySelector('form').addEventListener('submit', function(event) {
+                                event.preventDefault();
+                                swal({
+                                    title: "Gracias!",
+                                    text: "Tu mensaje ha sido enviado correctamente.",
+                                    icon: "success",
+                                });
+                            });
+                        </script>
+                    `
+                }
+            },
+            buttons: {
+                cancel: "Cancelar",
+                confirm: false, // Disable confirm button since the form has its own submit button
+            },
         });
     };
     
