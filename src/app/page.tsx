@@ -1,22 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import './BentoGrid.css';
 import './Buttons.css'
 import { FaCheckCircle } from "react-icons/fa";
-import swal from 'sweetalert';
 
 export default function Home() {
-    const handleContactClick = () => {
-        swal({
-            title: "Contáctame",
-            text: "Gracias por tu interés. Pronto nos pondremos en contacto contigo.",
-            icon: "success",
-        });
-    };
-    
+
     return (
         <>
+
             <div className="text-center">
                 <br />
                 <h1 className="animated-heading font-black">Diseño y Desarrrollo de<br />
@@ -25,7 +18,14 @@ export default function Home() {
                 </h1>
                 <div>
                     <br />
-                    <button className="button button--rounded" onClick={handleContactClick}>Contáctame</button>
+                    <a
+                        href="https://32244.aidaform.com/programandoconedu"
+                        className="button button--rounded"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Contáctame
+                    </a>
                     <br /><br />
                     <h1 className="text-2xl">
                         Te ayudo a digitalizar y automatizar tu negocio <br />
@@ -234,8 +234,18 @@ export default function Home() {
             <br />
 
             <div style={{ textAlign: 'center' }}>
-                <button className="button button--rounded">Cotiza Aquí</button>
+                {/* <button className="button button--rounded">Cotiza Aquí</button> */}
+                <a  
+                href="https://32244.aidaform.com/programandoconedu"
+                className="button button--rounded"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Cotiza Aquí
+            </a>
             </div>
+            
+
             <br />
         </>
     )
