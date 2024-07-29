@@ -43,10 +43,7 @@ export default function Home() {
                     `
                 }
             },
-            buttons: {
-                cancel: "Cancelar",
-                confirm: false, // Disable confirm button since the form has its own submit button
-            },
+
         });
     };
     
