@@ -10,9 +10,25 @@ export default function Home() {
     const handleContactClick = () => {
         swal({
             title: "Contáctame",
-            text: "Gracias por tu interés. Pronto nos pondremos en contacto contigo.",
-            icon: "success",
-
+            content: {
+                element: "form",
+                attributes: {
+                    action: "https://formspree.io/f/mrbzpdbd",
+                    method: "POST",
+                    innerHTML: `
+                        <label class="block text-gray-700 text-sm font-bold mb-2">
+                            Tu correo electrónico:
+                            <input type="email" name="email" class="form-input mt-1 block w-full" required />
+                        </label>
+                        <label class="block text-gray-700 text-sm font-bold mb-2">
+                            En que te puedo ayudar?
+                            <textarea name="message" class="form-textarea mt-1 block w-full" required></textarea>
+                        </label>
+                        <button type="submit" class="button button--rounded mt-4">Enviar</button>
+                    `
+                }
+            },
+            buttons: false,
         });
     };
     return (
