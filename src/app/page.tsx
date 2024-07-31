@@ -97,8 +97,7 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                                obcaecati ullam excepturi dicta error deleniti sequi.
+                                Diseño y Desarrollo de LandingPage con sección de blogs con NextJS.
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>
@@ -121,10 +120,7 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                                inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus
-                                dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi
-                                voluptatem! Culpa, iusto.
+                                Diseño y Desarrollo de LandingPage con Wordpress.
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>
@@ -149,8 +145,7 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                                obcaecati ullam excepturi dicta error deleniti sequi.
+                                Creación de videos virales para Instagram (3 meses).
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>
@@ -173,10 +168,7 @@ export default function Home() {
                                 <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
                                     "
                                 </span>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                                inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus
-                                dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi
-                                voluptatem! Culpa, iusto.
+                                Gestión y Creación de video y publicaciones para Instagram (1 mes).
                                 <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
                                     "
                                 </span>
