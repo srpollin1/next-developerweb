@@ -65,7 +65,7 @@ export default function Home() {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/CD0YQCmFMOc?si=ZJ4xW4R8ArQo3CY-"
+                    src="https://www.youtube.com/embed/SRPuUpbLWCs?si=3DnzIv6qj62WXhFA"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     className="shadow-lg rounded-lg"
